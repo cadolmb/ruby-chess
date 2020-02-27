@@ -5,8 +5,8 @@ class Bishop < Piece
   def initialize(color, file, rank)
     super(color, file, rank)
 
-    @img = Gosu::Image.new('./src/resources/simple/WB.gif') if @color == :white
-    @img = Gosu::Image.new('./src/resources/simple/BB.gif') if @color == :black
+    @img = Gosu::Image.new('./resources/simple/WB.gif') if @color == :white
+    @img = Gosu::Image.new('./resources/simple/BB.gif') if @color == :black
   end
   
   def move_is_possible(file, rank, board)

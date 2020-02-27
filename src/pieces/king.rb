@@ -5,8 +5,8 @@ class King < Piece
   def initialize(color, file, rank)
     super(color, file, rank)
 
-    @img = Gosu::Image.new('./src/resources/simple/WK.gif') if @color == :white
-    @img = Gosu::Image.new('./src/resources/simple/BK.gif') if @color == :black
+    @img = Gosu::Image.new('./resources/simple/WK.gif') if @color == :white
+    @img = Gosu::Image.new('./resources/simple/BK.gif') if @color == :black
   end
   
   def move_is_possible(file, rank, board)

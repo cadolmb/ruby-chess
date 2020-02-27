@@ -5,8 +5,8 @@ class Knight < Piece
   def initialize(color, file, rank)
     super(color, file, rank)
 
-    @img = Gosu::Image.new('./src/resources/simple/WN.gif') if @color == :white
-    @img = Gosu::Image.new('./src/resources/simple/BN.gif') if @color == :black
+    @img = Gosu::Image.new('./resources/simple/WN.gif') if @color == :white
+    @img = Gosu::Image.new('./resources/simple/BN.gif') if @color == :black
   end
   
   def move_is_possible(file, rank, board)

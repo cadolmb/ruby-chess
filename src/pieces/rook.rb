@@ -5,8 +5,8 @@ class Rook < Piece
   def initialize(color, file, rank)
     super(color, file, rank)
 
-    @img = Gosu::Image.new('./src/resources/simple/WR.gif') if @color == :white
-    @img = Gosu::Image.new('./src/resources/simple/BR.gif') if @color == :black
+    @img = Gosu::Image.new('./resources/simple/WR.gif') if @color == :white
+    @img = Gosu::Image.new('./resources/simple/BR.gif') if @color == :black
   end
   
   def move_is_possible(file, rank, board)

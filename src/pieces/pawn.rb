@@ -7,8 +7,8 @@ class Pawn < Piece
 
     @first_move = true
 
-    @img = Gosu::Image.new('./src/resources/simple/WP.gif') if @color == :white
-    @img = Gosu::Image.new('./src/resources/simple/BP.gif') if @color == :black
+    @img = Gosu::Image.new('./resources/simple/WP.gif') if @color == :white
+    @img = Gosu::Image.new('./resources/simple/BP.gif') if @color == :black
   end
 
   def move(file, rank)

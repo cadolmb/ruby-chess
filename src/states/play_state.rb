@@ -3,7 +3,7 @@ require './src/board/board.rb'
 
 class PlayState < GameState
 
-  MOUSE_IMG = Gosu::Image.new('./src/resources/mouse_icon.png')
+  MOUSE_IMG = Gosu::Image.new('./resources/mouse_icon.png')
   BG_COLOR = Gosu::Color.new(120, 100, 80)
   OUTLINE = Board::WIDTH / 90.0
   OUTLINE_COLOR = Gosu::Color.new(50, 30, 25)

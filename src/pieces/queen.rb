@@ -5,8 +5,8 @@ class Queen < Piece
   def initialize(color, file, rank)
     super(color, file, rank)
 
-    @img = Gosu::Image.new('./src/resources/simple/WQ.gif') if @color == :white
-    @img = Gosu::Image.new('./src/resources/simple/BQ.gif') if @color == :black
+    @img = Gosu::Image.new('./resources/simple/WQ.gif') if @color == :white
+    @img = Gosu::Image.new('./resources/simple/BQ.gif') if @color == :black
   end
   
   def move_is_possible(file, rank, board)
